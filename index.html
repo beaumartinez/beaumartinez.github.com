@@ -72,6 +72,11 @@
 
         age = now.getFullYear() - BIRTH_DATE.getFullYear()
 
+        if (now.getMonth() < BIRTH_DATE.getMonth()) {
+            // We haven't had the birthday yet
+            age--;
+        }
+
         return age
     }
 
