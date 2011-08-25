@@ -1,0 +1,87 @@
+<!doctype html>
+<head>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+        /* Resets */
+
+        body, div, h1, p {
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Overrides */
+
+        a {
+            color: inherit;
+        }
+
+        body {
+            background: #F5F5F5;
+            color: #282828;
+            font-family: 'ubuntu', sans;
+            font-size: 1.4em;
+        }
+
+        div, h1, p {
+            margin-bottom: 1em;
+        }
+
+        h1 {
+            font-weight: normal;
+        }
+
+        p {
+            line-height: 1.25;
+        }
+
+        /* Custom */
+
+        #content {
+            margin-top: 2em;
+        }
+
+        #title {
+            font-size: 3em;
+        }
+
+        #wrapper {
+            margin: 1em auto;
+            width: 30em;
+        }
+    </style>
+    <title>Beau Martínez</title>
+</head>
+<article id=wrapper>
+    <hgroup>
+        <h1 id=title>Beau Martínez</h1>
+    <hgroup>
+    <div id=content>
+        <p>I'm a <span id=age>20-something</span>-year-old Python web developer living in London</p>
+        <p>I love code</p>
+        <p>I love simplicity</p>
+        <p>I think that web apps are the future<p>
+        <p>I'm <a href="http://twitter.com/beaumartinez">@beaumartinez</a> on Twitter</p>
+        <p>My email address is <a href="mailto:beaumartinez@gmail.com">beaumartinez@gmail.com</a></p>
+    </div>
+</article>
+<script>
+    var BIRTH_DATE = new Date(1990, 4)
+
+    function calculateAge() {
+        now = new Date()
+
+        age = now.getFullYear() - BIRTH_DATE.getFullYear()
+
+        return age
+    }
+
+    function setAge() {
+        ageSpan = document.getElementById('age')
+
+        ageSpan.innerHTML = calculateAge()
+    }
+
+    setAge()
+</script>
