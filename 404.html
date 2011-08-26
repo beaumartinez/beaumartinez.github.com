@@ -5,13 +5,17 @@
 
     /* Resets */
 
-    body, h1 {
+    body, h1, ul {
         line-height: 1;
         margin: 0;
         padding: 0;
     }
 
     /* Overrides */
+
+    a {
+        color: inherit;
+    }
 
     body {
         background: #F5F5F5;
@@ -26,6 +30,22 @@
 
     /* Custom */
 
+    .clear {
+        clear: both;
+    }
+
+    #navigation {
+        float: right;
+    }
+
+    #navigation li {
+        display: inline;
+    }
+
+    #site-name {
+        float: left;
+        margin-bottom: 4em;
+    }
     #title {
         font-size: 3em;
     }
@@ -36,6 +56,18 @@
     }
 </style>
 <title>404 — Beau Martínez</title>
-<article id=wrapper>
+<div id=wrapper>
+    <header id=header>
+        <div id=site-name><a href=/>Beau Martínez</a></div>
+        <nav id=navigation>
+            <ul>
+                <li><a href=/home>home</a>
+                <li><a href=/about>about</a>
+                <li><a href=/articles>articles</a>
+                <li><a href=/projects>projects</a>
+            </ul>
+        </nav>
+    </header>
+    <div class=clear></div>
     <h1 id=title>404</h1>
-</article>
+</div>
