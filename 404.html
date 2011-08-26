@@ -1,5 +1,11 @@
 <!doctype html>
 <meta charset=utf-8>
+<script>
+    var _gaq = _gaq || []
+
+    _gaq.push(['_setAccount', 'UA-25375229-1'])
+    _gaq.push(['_trackPageview'])
+</script>
 <style>
     @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
@@ -77,3 +83,16 @@
     <div class=clear></div>
     <h1 id=title>404</h1>
 </div>
+<script>
+(function() {
+    var ga = document.createElement('script')
+
+    ga.async = true
+    ga.src = (document.location.protocol == 'https:' ? 'https://ssl' :
+        'http://www') + '.google-analytics.com/ga.js'
+
+    var s = document.getElementsByTagName('script')[0]
+
+    s.parentNode.insertBefore(ga, s)
+})()
+</script>
