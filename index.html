@@ -42,6 +42,10 @@
         clear: both;
     }
 
+    .hidden {
+        display: none;
+    }
+
     #navigation {
         float: right;
     }
@@ -67,17 +71,19 @@
 </style>
 <title>Beau Martínez</title>
 <div id=wrapper>
-    <header id=header>
-        <div id=site-name><a href=/>Beau Martínez</a></div>
-        <nav id=navigation>
-            <ul>
-                <li><a href=/home>home</a>
-                <li><a href=/about>about</a>
-                <li><a href=/articles>articles</a>
-                <li><a href=/projects>projects</a>
-            </ul>
-        </nav>
-    </header>
+    <div class=hidden>
+        <header id=header>
+            <div id=site-name><a href=/>Beau Martínez</a></div>
+            <nav id=navigation>
+                <ul>
+                    <li><a href=/home>home</a>
+                    <li><a href=/about>about</a>
+                    <li><a href=/articles>articles</a>
+                    <li><a href=/projects>projects</a>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <div class=clear></div>
     <article>
         <h1 id=title>Beau Martínez</h1>
