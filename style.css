@@ -23,7 +23,7 @@ body {
     width: 30em;
 }
 
-div, h1, p {
+div, h1, p, ul {
     margin-bottom: 1em;
 }
 
