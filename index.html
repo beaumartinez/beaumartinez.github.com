@@ -22,6 +22,8 @@
         color: #282828;
         font-family: ubuntu, sans-serif;
         font-size: 1.4em;
+        margin: 1em auto;
+        width: 30em;
     }
 
     div, h1, p {
@@ -63,41 +65,34 @@
         font-size: 3em;
         margin-bottom: 1em;
     }
-
-    #wrapper {
-        margin: 1em auto;
-        width: 30em;
-    }
 </style>
 <title>Beau Martínez</title>
-<div id=wrapper>
-    <div class=hidden>
-        <header id=header>
-            <div id=site-name><a href=/>Beau Martínez</a></div>
-            <nav id=navigation>
-                <ul>
-                    <li><a href=/home>home</a>
-                    <li><a href=/about>about</a>
-                    <li><a href=/articles>articles</a>
-                    <li><a href=/projects>projects</a>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <div class=clear></div>
-    <article>
-        <h1 id=title>Hi, I'm Beau</h1>
-        <div id=content>
-            <p>I'm a <span id=age>20-something</span>-year-old Python web
-            developer living in London.
-            <p>I love code. I love simplicity. I think that web apps are the
-            future.
-            <p>I'm <a href=http://twitter.com/beaumartinez>@beaumartinez</a> on
-            Twitter. My email address is <a
-            href=mailto:beau@beaumartinez.com>beau@beaumartinez.com</a>.
-        </div>
-    </article>
+<div class=hidden>
+    <header id=header>
+        <div id=site-name><a href=/>Beau Martínez</a></div>
+        <nav id=navigation>
+            <ul>
+                <li><a href=/home>home</a>
+                <li><a href=/about>about</a>
+                <li><a href=/articles>articles</a>
+                <li><a href=/projects>projects</a>
+            </ul>
+        </nav>
+    </header>
 </div>
+<div class=clear></div>
+<article>
+    <h1 id=title>Hi, I'm Beau</h1>
+    <div id=content>
+        <p>I'm a <span id=age>20-something</span>-year-old Python web
+        developer living in London.
+        <p>I love code. I love simplicity. I think that web apps are the
+        future.
+        <p>I'm <a href=http://twitter.com/beaumartinez>@beaumartinez</a> on
+        Twitter. My email address is <a
+        href=mailto:beau@beaumartinez.com>beau@beaumartinez.com</a>.
+    </div>
+</article>
 <script>
     var BIRTH_DATE = new Date(1990, 4)
 
