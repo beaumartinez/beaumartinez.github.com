@@ -28,6 +28,7 @@ div, h1, p, ul {
 }
 
 h1 {
+    font-size: 3em;
     font-weight: normal;
 }
 
@@ -56,8 +57,4 @@ p {
 #site-name {
     float: left;
     margin-bottom: 4em;
-}
-
-#title {
-    font-size: 3em;
 }
