@@ -31,25 +31,17 @@
 <script>
     var BIRTH_DATE = new Date(1990, 4)
 
-    function calculateAge() {
-        now = new Date()
+    var now = new Date()
 
-        age = now.getFullYear() - BIRTH_DATE.getFullYear()
+    var age = now.getFullYear() - BIRTH_DATE.getFullYear()
 
-        if (now.getMonth() < BIRTH_DATE.getMonth()) {
-            // We haven't had the birthday yet
-            age--;
-        }
-
-        return age
+    if (now.getMonth() < BIRTH_DATE.getMonth()) {
+        // We haven't had the birthday yet
+        age--;
     }
 
-    function setAge() {
-        ageSpan = document.getElementById('age')
+    var ageSpan = document.getElementById('age')
 
-        ageSpan.innerHTML = calculateAge()
-    }
-
-    setAge()
+    ageSpan.innerHTML = age 
 </script>
 <script async src=google-analytics.js></script>
