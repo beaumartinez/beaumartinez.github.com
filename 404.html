@@ -26,13 +26,13 @@
     </div>
 </article>
 <script>
-    path = document.location.pathname
+    var path = document.location.pathname
     path = path.substring(1)
     path = '"' + path + '"'
     path = 'The page ' + path
 
-    var site = document.getElementById('path')
+    var pathSpan = document.getElementById('path')
 
-    site.innerHTML = path
+    pathSpan.innerHTML = path
 </script>
 <script async src=google-analytics.js></script>
