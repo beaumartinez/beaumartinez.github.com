@@ -2,7 +2,7 @@
 
 /* Resets */
 
-body, div, h1, p, ul {
+body, div, h1, h2, p, ul {
     line-height: 1;
     margin: 0;
     padding: 0;
@@ -23,13 +23,16 @@ body {
     width: 30em;
 }
 
-div, h1, p, ul {
+div, h1, h2, p, ul {
     margin-bottom: 1em;
+}
+
+h1, h2 {
+    font-weight: normal;
 }
 
 h1 {
     font-size: 3em;
-    font-weight: normal;
 }
 
 p {
