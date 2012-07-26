@@ -12,16 +12,14 @@
     </div>
 </article>
 <script>
-    var path = document.location.pathname
+    var path = document.location.pathname;
 
     // Remove leading slash
-    path = path.substring(1)
+    path = path.substring(1);
+    path = '"' + path + '"';
 
-    path = '"' + path + '"'
-
-    var pathSpan = document.getElementById('path')
-
-    pathSpan.innerHTML = path
+    var pathSpan = document.getElementById('path');
+    pathSpan.innerHTML = path;
 </script>
 <script async src=js/clicky.js></script>
 <noscript><img class=hidden alt='Clicky tracking image'
