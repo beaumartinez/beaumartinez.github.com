@@ -3,14 +3,14 @@
 <title>Beau Martinez</title>
 <link rel=stylesheet href=css/style.css>
 <meta name=description value="Hi, I'm Beau. I'm a 22 year-old Python web developer living in London. I love simplicity. I think that web apps are the future.">
-<article>
-    <h1 id=title>Hi, I'm <span title='Pronounced like "bow" in "bow and arrow"'>Beau</span></h1>
+<article itemscope itemtype=http://schema.org/Person>
+    <h1 id=title>Hi, I'm <span itemprop=name title='Pronounced like "bow" in "bow and arrow"'>Beau</span></h1>
     <div id=content>
-        <p>I'm a 22-year-old Python web developer living in London
+        <p>I'm a 22-year-old <span itemprop=jobTitle>Python web developer</span> living in <span itemprop=address itemscope itemtype=http://schema.org/PostalAddress><span itemprop=addressRegion>London</span></span>
         <p>I love simplicity
         <p>I think that web apps are the future
         <p>I'm <a href=http://github.com/beaumartinez>on GitHub</a> and <a href=http://twitter.com/beaumartinez>on Twitter</a>
-        <p>My email address is <a href=mailto:beau@beaumartinez.com>beau@beaumartinez.com</a>
+        <p>My email address is <a href=mailto:beau@beaumartinez.com itemprop=email>beau@beaumartinez.com</a>
     </div>
 </article>
 <script async src=js/gauges.js></script>
